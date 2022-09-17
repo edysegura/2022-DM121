@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+body > div {
+  margin-bottom: 20px;
+}
+
 .toast {
   width: 320px;
   border: 1px solid gray;
@@ -36,4 +40,12 @@
 .toast header {
   display: flex;
   justify-content: space-between;
+}
+
+.toast.success {
+  border-color: #6fcf97;
+}
+
+.toast.success .icon {
+  background-image: url(images/successIcon.svg);
 }
